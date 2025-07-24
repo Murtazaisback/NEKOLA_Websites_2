@@ -187,7 +187,7 @@ const FunnelSteps = ({ funnel, funnelId, pages, subaccountId }: Props) => {
 
                     <Link
                       target="_blank"
-                      href={`${process.env.NEXT_PUBLIC_DOMAIN}/${clickedPage?.pathName}/${process.env.NEXT_PUBLIC_SCHEME}${funnel.subDomainName}`}
+                      href={`${process.env.NEXT_PUBLIC_DOMAIN}/${clickedPage?.pathName}/${funnel.subDomainName}`}
                       className="group flex items-center justify-start p-2 gap-2 hover:text-primary transition-colors duration-200"
                     >
                       <ExternalLink size={15} />
