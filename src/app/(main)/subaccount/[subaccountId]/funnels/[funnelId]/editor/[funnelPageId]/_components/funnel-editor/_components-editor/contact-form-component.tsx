@@ -50,7 +50,7 @@ const ContactFormComponent = ({ element }: Props) => {
             const nextPage = funnelPages.FunnelPages.find((page) => page.order == pageDetails.order + 1);
 
             if (!nextPage) return;
-            router.replace(`${process.env.NEXT_PUBLIC_SCHEME}${funnelPages.subDomainName}.${process.env.NEXT_PUBLIC_DOMAIN}/${nextPage.pathName}`);
+            router.replace(`${process.env.NEXT_PUBLIC_DOMAIN}/${nextPage.pathName}/${process.env.NEXT_PUBLIC_SCHEME}${funnelPages.subDomainName}`);
         }
     };
 

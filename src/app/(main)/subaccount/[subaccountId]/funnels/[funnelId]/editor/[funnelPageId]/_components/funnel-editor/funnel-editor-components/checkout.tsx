@@ -117,7 +117,7 @@ const Checkout = (props: Props) => {
       )
       if (!nextPage) return
       router.replace(
-        `${process.env.NEXT_PUBLIC_SCHEME}${funnelPages.subDomainName}.${process.env.NEXT_PUBLIC_DOMAIN}/${nextPage.pathName}`
+        `${process.env.NEXT_PUBLIC_DOMAIN}/${nextPage.pathName}/${process.env.NEXT_PUBLIC_SCHEME}${funnelPages.subDomainName}`
       )
     }
   }
